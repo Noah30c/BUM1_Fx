@@ -6,5 +6,9 @@ module eus.ehu.bum1_fx {
     requires java.desktop;
 
     opens eus.ehu.bum1_fx to javafx.fxml;
-    exports eus.ehu.bum1_fx;
+    //exports eus.ehu.bum1_fx;
+    exports eus.ehu.bum1_fx.presentation;
+    opens eus.ehu.bum1_fx.presentation to javafx.fxml;
+    exports eus.ehu.bum1_fx.business_Logic;
+    opens eus.ehu.bum1_fx.business_Logic to javafx.fxml;
 }
